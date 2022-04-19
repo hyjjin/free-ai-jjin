@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <title>0419 입력양식태그 연습</title>
+    <style>
+        table{
+            width: 100%;
+            border: 1px solid black; border-collapse: collapse;
+        }
+        th{
+            text-align: left;
+            width: 20%;
+            padding: 8px 0 8px 5px;
+            background-color: lightgray;
+        }
+        td{
+            width: 80%;
+            border: 1px solid black;
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <th>작성자</th>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <th>비밀번호</th>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <th>메일주소</th>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <th>제목</th>
+                <td><input type="text" name="title"></td>
+            </tr>
+            <tr>
+                <th>내용</th>
+                <td><textarea name="content" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <th>링크연결</th>
+                <td><input type="text" name="link"></td>
+            </tr>
+            <tr>
+                <th>파일등록</th>
+                <td><input type="file" name="file"></td>
+            </tr>
+            <tr>
+                <th>자동등록방지</th>
+                <td><input type="text" name="autosave"></td>
+            </tr>
+        </table>
+        <td><input type="submit" name="button"></td>
+    </form>
+</body>
+</html>
